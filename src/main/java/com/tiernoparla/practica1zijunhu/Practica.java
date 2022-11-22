@@ -5,7 +5,7 @@ package com.tiernoparla.practica1zijunhu;
 
 public class Practica {
     public static void main(String[] args) {
-        
+     
     //PARTE 1
     
     //introducir número
@@ -24,14 +24,27 @@ public class Practica {
       int dado = ram.nextInt(2);
       System.out.print(dado + " ");
     }
+    
         System.out.println(" ");
     
+     
     //PARTE 2
+    for (int j = 1; j < num; j++) {
+        int elevado = (int) Math.pow(2, j)-(j+1);
+        System.out.println("2elevado a " + j + " = " + elevado);
+        for (int k = 0; k >= num; k++ ) {
+            System.out.println("porfa" + k);
+    }
+    }
     
-    //2n-(n+1)
-    int n = 5;
-    int cal = (int) Math.pow(2, n);
-    int calculo = cal-(n+1);
-        System.out.println(calculo);
+    
+        
+        
+        
+        
+        
+        
+        
+        
     } //main
 } //Practica

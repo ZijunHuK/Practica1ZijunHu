@@ -28,11 +28,13 @@ public class Practica {
 
     //PARTE 2
     
+    
     int elevado = (int) Math.pow(2, 3)-(3+1);
     int elevado1 = (int) Math.pow(2, 4)-(4+1);
     if (elevado < num && num > elevado1) {
         System.out.println("true");
     }
+        
     /*
     for (int j = 1; j < num; j++) {
         int elevado = (int) Math.pow(2, j)-(j+1);

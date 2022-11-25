@@ -13,40 +13,40 @@ public class Practica {
 
     System.out.println("Introduce cantidad de tu mensaje: ");
     
-    int num = sca.nextInt();
+    int longitud = sca.nextInt();
 
-    System.out.println("cantidad que tengo son: " + num);
+    System.out.println("cantidad que tengo son: " + longitud);
     
     //generar el número al 0 y 1
     Random ram = new Random();
     
-    for (int i = 0; i < num; i++) {
-      int binario = ram.nextInt(2);
+    int binario = ram.nextInt(2);
+    
+    for (int i = 0; i < longitud; i++) {
       System.out.print(binario + " ");
-    }
+    } //for i
+    
         System.out.println(" ");
 
     //PARTE 2
     
-    
-    int elevado = (int) Math.pow(2, 3)-(3+1);
-    int elevado1 = (int) Math.pow(2, 4)-(4+1);
-    if (elevado < num && num > elevado1) {
-        System.out.println("true");
-    }
-        
-    /*
-    for (int j = 1; j < num; j++) {
+    //cantidad mínima de bits de redundancia necesarios
+    for (int j = 1; j < longitud; j++) {
         int elevado = (int) Math.pow(2, j)-(j+1);
-        System.out.println("2elevado a " + j + " = " + elevado);
-        if (num < elevado){
-            System.out.println("true");   
-        }
-    }
-    */ 
+        if (elevado >= longitud) {
+            System.out.println("está dentro de 2 elevado a " + j);
+            } //if
         
-        
-        
+    // rellenar
+            for (int k = 0; k < j; k++) {
+                System.out.print(binario + " ");
+            } //for k
+            
+            
+            break;
+        } //for j
+    
+    
         
         
         
